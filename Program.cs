@@ -24,10 +24,10 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
 builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy("AdminPolicy", policy => policy.RequireRole("Admin"));
-    // Agrega más políticas según tus necesidades
+    
 });
 
-// Configuración de Swagger
+// ConfiguraciÃ³n de Swagger
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo
@@ -37,13 +37,13 @@ builder.Services.AddSwaggerGen(c =>
         Description = "Api que maneja los clientes y los usuarios"
     });
 
-    // Configuración para incluir comentarios XML (si tienes habilitada la generación XML en propiedades del proyecto)
-    // c.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "TuProyecto.XML"));
+    // ConfiguraciÃ³n para incluir comentarios XML
+    // c.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, "API.XML"));
 });
 
 var app = builder.Build();
 
-// Configuración del pipeline de solicitud HTTP
+// ConfiguraciÃ³n del pipeline de solicitud HTTP
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
