@@ -23,6 +23,13 @@ Este proyecto consiste en una API RESTful segura desarrollada utilizando ASP.NET
 
 - **Iniciar Sesión**: `POST /usuario/login`
 
+## Instrucciones
+
+- Descarga este repositorio en tu máquina local.
+- Dentro de la carpeta descargada abre el archivo `API.csproj`.
+- Una vez dentro puedes iniciar la aplicación, se abribrá tu navegador, tendras que ingresar una dirección como esta: `localhost:7162/swagger`.
+- `Nota:` La dirección proporcionada anteriormente es de referencia, el puerto puede cambiar en cada entorno pero el resto es igual.
+
 ## Seguridad y Middleware
 
 - Se ha implementado un middleware personalizado para registrar las solicitudes a la API antes y después del procesamiento.
@@ -31,7 +38,7 @@ Este proyecto consiste en una API RESTful segura desarrollada utilizando ASP.NET
 
 ## Documentación
 
-La API se documenta utilizando Swagger/OpenAPI. Puedes acceder a la documentación en [localhost:tu_puerto/swagger](http://localhost:tu_puerto/swagger).
+La API se documenta utilizando Swagger/OpenAPI. Puedes acceder a la documentación en [localhost:tu_puerto/swagger/v1/swagger.json](http://localhost:tu_puerto/swagger/v1/swagger.json).
 
 ## Configuración Adicional
 
